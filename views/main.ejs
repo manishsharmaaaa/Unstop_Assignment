@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Online Seats Booking</title>
+
+    <style>
+        .seat input[type="checkbox"]:checked {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body class="p-2">
+    <h4 class="text-center">Online Seats Booking</h4>
+
+    <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-dark btn-sm" onclick="SeatiBooking()">Book Tickets</button>
+        <button type="button" class="btn btn-dark btn-sm" onclick="ClearSeats()">Clear Seats</button>
+    </div>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R1-S1 "> &nbsp; R1-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R1-S2"> &nbsp; R1-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R1-S3"> &nbsp; R1-S3</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R1-S4"> &nbsp; R1-S4</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R1-S5"> &nbsp; R1-S5</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R1-S6"> &nbsp; R1-S6</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R1-S7"> &nbsp; R1-S7</div>
+        </div>
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R2-S1"> &nbsp; R2-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R2-S2"> &nbsp; R2-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R2-S3"> &nbsp; R2-S3</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R2-S4"> &nbsp; R2-S4</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R2-S5"> &nbsp; R2-S5</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R2-S6"> &nbsp; R2-S6</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R2-S7"> &nbsp; R2-S7</div>
+        </div>
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R3-S1"> &nbsp; R3-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R3-S2"> &nbsp; R3-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R3-S3"> &nbsp; R3-S3</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R3-S4"> &nbsp; R3-S4</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R3-S5"> &nbsp; R3-S5</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R3-S6"> &nbsp; R3-S6</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R3-S7"> &nbsp; R3-S7</div>
+        </div>
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R4-S1"> &nbsp; R4-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R4-S2"> &nbsp; R4-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R4-S3"> &nbsp; R4-S3</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R4-S4"> &nbsp; R4-S4</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R4-S5"> &nbsp; R4-S5</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R4-S6"> &nbsp; R4-S6</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R4-S7"> &nbsp; R4-S7</div>
+        </div>
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R5-S1"> &nbsp; R5-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R5-S2"> &nbsp; R5-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R5-S3"> &nbsp; R5-S3</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R5-S4"> &nbsp; R5-S4</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R5-S5"> &nbsp; R5-S5</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R5-S6"> &nbsp; R5-S6</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R5-S7"> &nbsp; R5-S7</div>
+        </div>
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R6-S1"> &nbsp; R6-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R6-S2"> &nbsp; R6-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R6-S3"> &nbsp; R6-S3</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R6-S4"> &nbsp; R6-S4</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R6-S5"> &nbsp; R6-S5</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R6-S6"> &nbsp; R6-S6</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R6-S7"> &nbsp; R6-S7</div>
+        </div>
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R7-S1"> &nbsp; R7-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R7-S2"> &nbsp; R7-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R7-S3"> &nbsp; R7-S3</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R7-S4"> &nbsp; R7-S4</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R7-S5"> &nbsp; R7-S5</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R7-S6"> &nbsp; R7-S6</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R7-S7"> &nbsp; R7-S7</div>
+        </div>
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R8-S1"> &nbsp; R8-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R8-S2"> &nbsp; R8-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R8-S3"> &nbsp; R8-S3</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R8-S4"> &nbsp; R8-S4</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R8-S5"> &nbsp; R8-S5</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R8-S6"> &nbsp; R8-S6</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R8-S7"> &nbsp; R8-S7</div>
+        </div>
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R9-S1"> &nbsp; R9-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R9-S2"> &nbsp; R9-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R9-S3"> &nbsp; R9-S3</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R9-S4"> &nbsp; R9-S4</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R9-S5"> &nbsp; R9-S5</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R9-S6"> &nbsp; R9-S6</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R9-S7"> &nbsp; R9-S7</div>
+        </div>
+        <div class="row">
+            <div class="seat col"><input type="checkbox" disabled class="seat-R10-S1"> &nbsp; R10-S1</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R10-S2"> &nbsp; R10-S2</div>
+            <div class="seat col"><input type="checkbox" disabled class="seat-R10-S3"> &nbsp; R10-S3</div>
+        </div>
+    </div>
+
+
+    <div class="mt-5 text-center seatsMessage">
+
+    </div>
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $.ajax({
+        url: '/seat-booked',
+        method: 'GET',
+        dataType: 'json',
+        success: function (response) {
+            for (i = 0; i < response['Booked'].length; i++) {
+                $(`.seat-R${response['Booked'][i]['row']}-S${response['Booked'][i]['seat']}`).prop('checked', true);
+            }
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    })
+    function SeatiBooking() {
+        const numSeatsRequired = parseInt(prompt("Please enter a number of seats to book", 1))
+        if (numSeatsRequired > 7) {
+            return alert("Max seats can be booked is 7")
+        }
+        if (numSeatsRequired => 1) {
+            $.ajax({
+                url: '/seat-bookings',
+                method: 'POST',
+                dataType: 'json',
+                data: { numSeatsRequired },
+                success: function (response) {
+                    for (i = 0; i < response['bookedSetsList'].length; i++) {
+                        $(`.seat-${response['bookedSetsList'][i]}`).prop('checked', true);
+                    }
+                    $('.seatsMessage').html(response['Message'])
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            })
+        } else {
+            alert("Please enter a number of seats to book")
+        }
+    }
+
+    function ClearSeats() {
+        if (confirm("Press a button!")) {
+            $.ajax({
+                url: '/clear-bookings',
+                method: 'GET',
+                dataType: 'json',
+                success: function (response) {
+                    window.location.reload()
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            })
+        }
+    }
+</script>
+
+</html>
